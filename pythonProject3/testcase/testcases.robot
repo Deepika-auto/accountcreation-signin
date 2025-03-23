@@ -53,3 +53,8 @@ Testcase 10 - Attempt to sign in with empty fields
     [Template]      Signing to the website with both positive and negative credentials
     [Documentation]     This test case verifies that the system prompts the user to enter credentials when trying to log in with empty fields.
     user@gmail.com        ${empty}        (//*[text()='This is a required field.'])[1]
+
+Testcase 11 - Create account and signin with the same account
+    [Template]      Create an account and signin with the same account
+    [Documentation]     This test case verifies that the user create an account and signin with the same account
+    yyy       uu        yyyuu@gmail.com        Passs!12345        Passs!12345        //*[text()='Thank you for registering with Main Website Store.']        yyyuu@gmail.com        Passs!12345        (//*[text()='Account Information'])[1]
