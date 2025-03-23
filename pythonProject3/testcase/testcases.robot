@@ -27,17 +27,17 @@ Testcase 4 - Create an account with empty mandatory fields
 Testcase 5 - Successfully create an account
     [Template]      Creating Account with both postive and negative scenarios
     [Documentation]     This test case verifies that a user can successfully create an account with valid details and receive a confirmation message.
-    admin       user        admin@gmail.com        Pass!12345        Pass!12345        //*[text()='Thank you for registering with Main Website Store.']
+    auto       mation        amation@gmail.com        Pass!12345        Pass!12345        //*[text()='Thank you for registering with Main Website Store.']
     
 Testcase 6 - Attempt to create an account with an already registered email
     [Template]      Creating Account with both postive and negative scenarios
     [Documentation]     This test case verifies that the system prevents duplicate account creation by displaying an appropriate error message when using an existing email ID.
     admin        user        admin@gmail.com        Pass!12345        Pass!12345        //*[text()='There is already an account with this email address. If you are sure that it is your email address, ']
 
-Testcase 7 - Successfully sign in to the website hbhbhbh
+Testcase 7 - Successfully sign in to the website
     [Template]      Signing to the website with both positive and negative credentials
     [Documentation]     This test case verifies that a registered user can successfully sign in with valid credentials.
-    admin@gmail.com        Pass!12345        //div[@class='mage-error' and @id='email_address-error']
+    deepika@gmail.com        Qwertyu@123        //div[@class='mage-error' and @id='email_address-error']
 
 Testcase 8 - Attempt to sign in with invalid credentials
     [Template]      Signing to the website with both positive and negative credentials
