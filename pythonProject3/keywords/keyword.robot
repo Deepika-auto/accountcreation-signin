@@ -23,7 +23,7 @@ Signing to the website with both positive and negative credentials
     [Arguments]    ${username}    ${user_password}    ${expected_result}
     Open Browser        ${website_url}        gc
     Maximize Browser Window
-    Click Element        (//a[@href="https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2xvZ291dC8%2C/"])[1]
+    Click Element        (//a[contains(@href, '/customer/account/login') and contains(text(), 'Sign In')])[1]
     Wait Until Page Contains        Customer Login
     Input Text        //input[@id="email"]        ${username}
     Input Text        //input[@id="pass"]        ${user_password}
