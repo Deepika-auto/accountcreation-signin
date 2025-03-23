@@ -37,7 +37,7 @@ Testcase 6 - Attempt to create an account with an already registered email
 Testcase 7 - Successfully sign in to the website
     [Template]      Signing to the website with both positive and negative credentials
     [Documentation]     This test case verifies that a registered user can successfully sign in with valid credentials.
-    deepika@gmail.com        Qwertyu@123        //div[@class='mage-error' and @id='email_address-error']
+    deepika@gmail.com        Qwertyu@123        //span[text()="Home Page"]
 
 Testcase 8 - Attempt to sign in with invalid credentials
     [Template]      Signing to the website with both positive and negative credentials
